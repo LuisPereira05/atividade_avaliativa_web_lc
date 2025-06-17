@@ -1,11 +1,17 @@
 body{
-    background-color: rgb(33, 21, 83);
     display: block;
     margin: 0px;
     justify-items: center;
     justify-content: center;
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../img/background.png);
+}
+
+.main{
+    margin-top: 100px;
+    background-color: rgba(23, 100, 50, 0.95);
+    padding: 20px;
 }
 
 header{
@@ -25,7 +31,7 @@ header{
 
 .menuArea{
     position: fixed;
-    left: 0;
+    left: 0px;
     /* border-style: solid; */
 }
 
@@ -37,7 +43,7 @@ header{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     height: 100px;
-    background-color:  rgb(79, 83, 203);
+    background-color:  rgb(62, 219, 117);
     text-align: center;
     align-items: center;
 }
@@ -77,19 +83,19 @@ button:hover{
     height: 50px;
     border: none;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(62, 219, 117);
     color: white;
     transition: background-color 0.3s;
 }
 
 #catDropdown button:hover{
-    background-color: rgba(0, 0, 0, 0.353);
+    background-color: rgb(36, 158, 79);
 }
 
 #catSubmenu{
     display: none;
     grid-template-rows: auto;
-    background-color:  rgb(51, 55, 158);
+    background-color:  rgb(36, 158, 79);
     grid-column-start: 2;
 }
 
