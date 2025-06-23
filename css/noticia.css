@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../img/background.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.main {
+    width: 90%;
+    margin: 100px auto;
+    background-color: rgba(23, 100, 50, 0.672);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.489);
+    padding: 20px;
+    text-align: center;
+}
+
+.headBar {
+    background-color: rgb(123, 179, 127);
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.menuArea {
+    z-index: 20;
+    position: fixed;
+    left: -79px;
+    top: 50px;
+}
+
+.menuBar {
+    width: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+#showMenu {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#showMenu img {
+    height: 20px;
+}
+
+.subMenus {
+    margin-left: 75px;
+    margin-top: -50px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    height: 50px;
+    background-color: none;
+    text-align: center;
+    align-items: center;
+    z-index: 11;
+}
+
+#catSubmenu {
+    display: none;
+    grid-template-rows: auto;
+    background-color: rgba(23, 100, 50, 0.576);
+    grid-column-start: 2;
+}
+
+#catSubmenu button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 5px;
+}
+
+#catSubmenu button:hover {
+    background-color: rgba(31, 141, 69, 0.576);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(23, 100, 50, 0.576);
+    color: white;
+    border: none;
+    padding: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.489);
+    backdrop-filter: blur(3px);
+    border-radius: 5%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(31, 141, 69, 0.576);
+}
+
+a {
+    color: white;
+}
+
+.headimg {
+    margin-top: 50px;
+    background-color: rgba(203, 255, 186, 0.427);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.489);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.headimg img {
+    height: 120px;
+    margin: 0 10px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.headimg img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.noticia-container {
+    text-align: left;
+    margin: 20px 2%;
+    background-color: rgba(101, 197, 132, 0.76);
+    padding: 20px;
+}
+
+.noticia-titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.noticia-data {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.noticia-imagem {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.noticia-texto p {
+    line-height: 1.6em;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
